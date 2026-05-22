@@ -1,6 +1,8 @@
-// YOU'RE TOO SLOW !!
+// a little better with the base case
 
 function getCommon(nums1: number[], nums2: number[]): number {
+
+    if (nums1[nums1.length-1] < nums2[0] || nums2[nums2.length-1] < nums1[0]) return -1;
 
     let currNum1 = 0
     let currNum2 = 0
@@ -17,3 +19,4 @@ function getCommon(nums1: number[], nums2: number[]): number {
 
     return -1
 };
+

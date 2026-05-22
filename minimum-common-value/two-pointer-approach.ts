@@ -1,4 +1,4 @@
-// a little better with the base case
+// i just made a mistake in the while x.x
 
 function getCommon(nums1: number[], nums2: number[]): number {
 
@@ -7,7 +7,7 @@ function getCommon(nums1: number[], nums2: number[]): number {
     let currNum1 = 0
     let currNum2 = 0
 
-    while (currNum1 < nums1.length || currNum2 < nums2.length) {
+    while (currNum1 < nums1.length && currNum2 < nums2.length) {
         if (nums1[currNum1] == nums2[currNum2]) return nums1[currNum1]
 
         if (nums1[currNum1] > nums2[currNum2] && currNum2 < nums2.length) {
@@ -19,4 +19,3 @@ function getCommon(nums1: number[], nums2: number[]): number {
 
     return -1
 };
-

@@ -1,3 +1,5 @@
+// YOU'RE TOO SLOW !!
+
 function getCommon(nums1: number[], nums2: number[]): number {
 
     let currNum1 = 0
